@@ -1,6 +1,6 @@
 # Welcome to the online GPG Book!
 
-This resource has been designed to help newcomers (and veteran users alike) along the path of using GNU GPG
+This resource has been designed to help newcomers (and veteran users alike) along the path of using GnuPG
 cryptographic suite.
 
 ## How to navigate
