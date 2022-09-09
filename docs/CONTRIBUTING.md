@@ -30,6 +30,13 @@ To set up a development environment, please follow these steps:
 
 4. Open `~/gpg-book/build/html/index.html` to review changes made
 
+## Development notes
+
+* All Markdown source files for the book is located in the `~/gpg-book/sources` subdirectory. Development will most
+  likely be focused here for content within the book.
+
+* The `~/gpg-book/docs/` folder is reserved for the **source repository** documentation.
+
 ## Issues and feature requests
 
 You've found a bug in the examples, a mistake in the documentation, or maybe you'd like a new feature? You can help
