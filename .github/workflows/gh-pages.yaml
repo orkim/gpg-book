@@ -1,0 +1,37 @@
+name: GitHub Pages
+
+on:
+  push:
+  pull_reqeust:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v2
+
+      - name: Setup dependencies
+        run: |
+          pip install sphinx sphinx-book-theme myst-parser
+
+      - name: Build
+        run: |
+          make html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/html
+          force_orphan: true

@@ -1,0 +1,5 @@
+# build output should not be commited
+build
+
+# ignore JetBrains IDE configs
+.idea
