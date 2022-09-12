@@ -47,13 +47,13 @@
 
 ## About
 
-The GnuPGP Book Project was started out of frustration from continuing to look up the same concepts or command
+The GnuPG Book Project was started out of frustration from continuing to look up the same concepts or command
 arguments, often spread across multiple sources, when using GnuPG. There are many actions that only occur very
 infrequently (adjusting the expiration date of a key once per year) which makes it difficult to recall the proper way
 to accomplish the task.
 
 It is hoped, beyond just documenting these infrequently used commands, that this project will foster a single source of
-information regarding best practices, usage patterns, settings to update between GnuPGP versions, and concepts can be
+information regarding best practices, usage patterns, settings to update between GnuPG versions, and concepts can be
 explained so that new users may get up to speed quicker.
 
 ### Built With
@@ -120,7 +120,7 @@ See [LICENSE](LICENSE) for more information.
 
 We would like to extend our thanks to the following people/projects:
 
-- [GnuGPG](https://www.gnupg.org/)
+- [GnuPG](https://www.gnupg.org/)
 - [Python](https://www.python.org/)
 - [Sphinx](https://www.sphinx-doc.org/en/master/)
 - [sphinx-book-theme](https://github.com/executablebooks/sphinx-book-theme)
